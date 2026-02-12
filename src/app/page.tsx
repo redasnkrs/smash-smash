@@ -10,6 +10,8 @@ import {
   Instagram,
   Facebook,
 } from "lucide-react";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const menuItems = [
   {
@@ -50,49 +52,12 @@ const menuItems = [
 ];
 
 export default function Home() {
-  const [isScrolled, setIsScrolled] = React.useState(false);
-
-  React.useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
   return (
     <div
       className="min-h-screen bg-background text-foreground selection:bg-accent selection:text-white"
       style={{ "--accent": "#469956" } as React.CSSProperties}
     >
-      {/* Navbar */}
-      <nav
-        className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-          isScrolled
-            ? "bg-black/80 backdrop-blur-md border-b border-white/10 py-4"
-            : "bg-transparent py-6"
-        }`}
-      >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-          <div className="text-2xl font-black tracking-tighter text-[#469956] italic">
-            SMASH & SMASH
-          </div>
-          <div className="hidden md:flex space-x-8 text-sm font-medium uppercase tracking-widest text-white">
-            <a href="#menu" className="hover:text-[#469956] transition-colors">
-              Le Menu
-            </a>
-            <a href="#about" className="hover:text-[#469956] transition-colors">
-              Notre Histoire
-            </a>
-            <a href="#contact" className="hover:text-[#469956] transition-colors">
-              Contact
-            </a>
-          </div>
-          <button className="bg-[#469956] text-white px-6 py-2 rounded-full font-bold text-sm uppercase hover:shadow-lg hover:shadow-[#469956]/20 transition-all">
-            Commander
-          </button>
-        </div>
-      </nav>
+      <Navbar />
       {/* Hero Section */}
       <section className="relative h-screen flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -146,20 +111,16 @@ export default function Home() {
         <div className="absolute bottom-0 w-full bg-[#469956] py-4 z-20 overflow-hidden border-t border-white/10">
           <div className="flex whitespace-nowrap animate-marquee">
             {[1, 2, 3, 4].map((i) => (
-              <div key={i} className="flex items-center mx-4">
-                <span className="text-white font-black italic text-xl uppercase tracking-tighter mx-4">
-                  Frais & Maison
-                </span>
-                <span className="text-white/30 text-2xl mx-4">•</span>
-                <span className="text-white font-black italic text-xl uppercase tracking-tighter mx-4">
-                  Pain Brioché
-                </span>
-                <span className="text-white/30 text-2xl mx-4">•</span>
-                <span className="text-white font-black italic text-xl uppercase tracking-tighter mx-4">
-                  Viande 100% Belge
-                </span>
-                <span className="text-white/30 text-2xl mx-4">•</span>
-              </div>
+                            <div key={i} className="flex items-center mx-4">
+                              <span className="text-white font-black italic text-xl uppercase tracking-tighter mx-4">Frais & Maison</span>
+                              <span className="text-white/30 text-2xl mx-4">•</span>
+                              <span className="text-white font-black italic text-xl uppercase tracking-tighter mx-4">100% Halal</span>
+                              <span className="text-white/30 text-2xl mx-4">•</span>
+                              <span className="text-white font-black italic text-xl uppercase tracking-tighter mx-4">Pain Brioché</span>
+                              <span className="text-white/30 text-2xl mx-4">•</span>
+                              <span className="text-white font-black italic text-xl uppercase tracking-tighter mx-4">Viande 100% Belge</span>
+                              <span className="text-white/30 text-2xl mx-4">•</span>
+                            </div>
             ))}
           </div>
         </div>
@@ -226,14 +187,23 @@ export default function Home() {
               Parce que la faim n'attend pas.
             </p>
           </div>
-          <div className="flex flex-col items-center border-y md:border-y-0 md:border-x border-white/10 py-12 md:py-0">
-            <ShoppingCart size={40} strokeWidth={2.5} />
-            <h3 className="mt-4 font-black text-xl">Click & Collect</h3>
-            <p className="font-medium opacity-80">
-              Commandez en ligne, retirez sur place.
-            </p>
-          </div>
-          <div className="flex flex-col items-center">
+                                        <div className="flex flex-col items-center border-y md:border-y-0 md:border-x border-white/10 py-12 md:py-0">
+                                          <svg 
+                                            width="40" 
+                                            height="40" 
+                                            viewBox="0 0 24 24" 
+                                            fill="none" 
+                                            stroke="currentColor" 
+                                            strokeWidth="2.5" 
+                                            strokeLinecap="round" 
+                                            strokeLinejoin="round"
+                                          >
+                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                            <path d="m9 12 2 2 4-4" />
+                                          </svg>
+                                          <h3 className="mt-4 font-black text-xl">100% Halal</h3>
+                                          <p className="font-medium opacity-80">Qualité certifiée, sans compromis.</p>
+                                        </div>          <div className="flex flex-col items-center">
             <MapPin size={40} strokeWidth={2.5} />
             <h3 className="mt-4 font-black text-xl">Local & Frais</h3>
             <p className="font-medium opacity-80">
@@ -357,9 +327,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-10 text-center text-foreground/40 text-sm border-t border-foreground/10">
-        <p>&copy; 2024 SMASH & SMASH. Tous droits réservés.</p>
-      </footer>
+      <Footer />
     </div>
   );
 }
