@@ -13,8 +13,30 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Smash & Smash | Le Meilleur Smash Burger de Paris",
-  description: "Découvrez nos burgers smashés à la perfection, viande fraîche et produits locaux. Commande en ligne et Click & Collect.",
+  title: "Smash & Smash | Le Meilleur Smash Burger de Bruxelles",
+  description: "Découvrez l'expérience Smash & Smash à Bruxelles. Burgers smashés à la perfection, viande belge fraîche et ambiance minimaliste. Commande en ligne et Click & Collect.",
+  openGraph: {
+    title: "Smash & Smash | Le Meilleur Smash Burger de Bruxelles",
+    description: "La réaction de Maillard à son apogée. Des produits frais, un décor brut, le goût pur.",
+    url: "https://smash-smash.be",
+    siteName: "Smash & Smash",
+    images: [
+      {
+        url: "/Dossier PNG SMASH SMASH/Menus PNG/Menu big smash.png",
+        width: 1200,
+        height: 630,
+        alt: "Smash & Smash Bruxelles",
+      },
+    ],
+    locale: "fr_BE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Smash & Smash | Bruxelles",
+    description: "Burgers smashés à la perfection, viande belge fraîche.",
+    images: ["/Dossier PNG SMASH SMASH/Menus PNG/Menu big smash.png"],
+  },
 };
 
 export default function RootLayout({
@@ -23,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

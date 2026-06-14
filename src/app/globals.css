@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #000000;
+  --background: #0a0a0a;
+  --foreground: #ffffff;
   --accent: #469956;
 }
 
@@ -25,6 +25,27 @@ body {
   
   .animate-marquee {
     animation: marquee 20s linear infinite;
+  }
+
+  /* Subtle Dark Section utility */
+  .bg-dark-section {
+    background: linear-gradient(145deg, #121212, #080808);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  /* Neon glow utility */
+  .neon-glow {
+    box-shadow: 0 0 30px rgba(70, 153, 86, 0.4);
+  }
+
+  .text-neon {
+    text-shadow: 0 0 10px rgba(70, 153, 86, 0.6);
+  }
+
+  .glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
   }
 }
 
