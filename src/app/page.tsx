@@ -12,7 +12,6 @@ const menuItems = [
   {
     id: 1,
     name: "Smash Burger",
-    price: "12.50€",
     description:
       "Double patty, cheddar fondu, oignons caramélisés, sauce secrète.",
     image: "/Dossier PNG SMASH SMASH/Burgers PNG/smash burger.png",
@@ -20,7 +19,6 @@ const menuItems = [
   {
     id: 2,
     name: "Smoky Smash",
-    price: "13.90€",
     description:
       "Double patty, bacon croustillant, sauce fumée, oignons frits.",
     image: "/Dossier PNG SMASH SMASH/Burgers PNG/smoky smash.png",
@@ -28,7 +26,6 @@ const menuItems = [
   {
     id: 3,
     name: "Big Smash",
-    price: "15.90€",
     description:
       "Double patty, triple cheddar, sauce biggy, salade iceberg.",
     image: "/Dossier PNG SMASH SMASH/Burgers PNG/big smash.png",
@@ -36,7 +33,6 @@ const menuItems = [
   {
     id: 4,
     name: "Frites Maison",
-    price: "4.50€",
     description: "Pommes de terre fraîches, double cuisson, croustillantes.",
     image: "/Dossier PNG SMASH SMASH/Frites PNG/frites.png",
   },
@@ -48,7 +44,7 @@ export default function Home() {
       className="min-h-screen bg-[#0a0a0a] text-white selection:bg-[#469956] selection:text-white"
     >
       <Navbar />
-      
+
       {/* Hero Section */}
       <section className="relative min-h-screen flex items-center overflow-hidden py-20">
         <div className="absolute inset-0 z-0">
@@ -70,7 +66,7 @@ export default function Home() {
               transition={{ duration: 0.8 }}
             >
               <h1 className="text-5xl xs:text-6xl sm:text-8xl lg:text-9xl font-black italic tracking-tighter mb-6 leading-[0.9]">
-                SMASH <br /> 
+                SMASH <br />
                 <span className="text-[#469956] text-neon uppercase">Everyday</span>
               </h1>
               <p className="text-base sm:text-lg md:text-xl text-white/70 mb-10 max-w-lg font-medium leading-relaxed italic border-l-4 border-[#469956] pl-6">
@@ -119,12 +115,12 @@ export default function Home() {
           <div className="flex flex-col md:flex-row items-center gap-12 md:gap-20">
             <div className="w-full md:w-1/2 relative">
               <div className="aspect-square rounded-[2rem] sm:rounded-[3rem] overflow-hidden border border-white/10 relative z-10 shadow-2xl bg-black/40 p-4 sm:p-8 flex items-center justify-center">
-                <Image 
-                  src="/Dossier PNG SMASH SMASH/Menus PNG/Menu smash burger.png" 
+                <Image
+                  src="/Dossier PNG SMASH SMASH/Menus PNG/Menu smash burger.png"
                   width={600}
                   height={600}
-                  className="w-full h-full object-contain" 
-                  alt="Smash Burger Menu" 
+                  className="w-full h-full object-contain"
+                  alt="Smash Burger Menu"
                 />
               </div>
             </div>
@@ -172,17 +168,16 @@ export default function Home() {
                 className="glass-card rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-8 transition-all hover:border-[#469956]/40 flex flex-col items-center text-center"
               >
                 <div className="h-40 sm:h-48 w-full mb-6 flex items-center justify-center relative">
-                  <Image 
-                    src={item.image} 
-                    alt={item.name} 
+                  <Image
+                    src={item.image}
+                    alt={item.name}
                     width={200}
                     height={200}
-                    className="max-w-full max-h-full object-contain drop-shadow-2xl" 
+                    className="max-w-full max-h-full object-contain drop-shadow-2xl"
                   />
                 </div>
                 <h3 className="text-xl sm:text-2xl font-black italic uppercase mb-2">{item.name}</h3>
-                <p className="text-white/40 text-xs sm:text-sm mb-6 font-medium italic h-10 line-clamp-2">{item.description}</p>
-                <span className="text-xl sm:text-2xl font-black text-[#469956] text-neon">{item.price}</span>
+                <p className="text-white/40 text-xs sm:text-sm font-medium italic h-10 line-clamp-2">{item.description}</p>
               </motion.div>
             ))}
           </div>
@@ -229,7 +224,7 @@ export default function Home() {
           <div className="glass-card rounded-[2.5rem] sm:rounded-[4rem] p-8 sm:p-12 md:p-20 overflow-hidden relative flex flex-col md:flex-row items-center justify-between gap-12">
             <div className="max-w-md text-center md:text-left z-10 w-full">
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-black italic tracking-tighter mb-6 sm:mb-8 uppercase leading-none text-neon">
-                SMASH <br /> 
+                SMASH <br />
                 <span className="text-white">BRUXELLES</span>
               </h2>
               <p className="text-white/60 text-base sm:text-lg mb-8 sm:mb-10 italic font-medium">
@@ -246,12 +241,12 @@ export default function Home() {
               </div>
             </div>
             <div className="w-full md:w-1/2 aspect-video md:aspect-square bg-black/40 rounded-[2rem] sm:rounded-[3rem] overflow-hidden border border-white/10 z-10 flex items-center justify-center p-4 sm:p-8 relative">
-               <Image 
-                src="/Dossier PNG SMASH SMASH/Menus PNG/Menu truffe.png" 
+               <Image
+                src="/Dossier PNG SMASH SMASH/Menus PNG/Menu truffe.png"
                 width={500}
                 height={500}
-                className="w-full h-full object-contain drop-shadow-2xl" 
-                alt="Smash Truffe" 
+                className="w-full h-full object-contain drop-shadow-2xl"
+                alt="Smash Truffe"
                />
             </div>
             {/* Background Glow */}

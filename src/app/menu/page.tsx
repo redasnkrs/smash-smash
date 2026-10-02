@@ -13,85 +13,71 @@ const categories = [
       {
         name: "Le Smash",
         description: "Bun Martin’s, steak irlandais, fromage américain, oignons, salade, tomate, pickles, sauce smash.",
-        price: "12.50€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/smash burger.png"
       },
       {
         name: "Smoky Smash",
         description: "Bun Martin’s, steak irlandais, bacon croustillant, fromage américain, salade, tomate, pickles, sauce fumée.",
-        price: "13.90€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/smoky smash.png"
       },
       {
         name: "Cheeseburger",
         description: "Bun Martin’s, steak irlandais, fromage américain, cornichons, sauce ketchup moutarde.",
-        price: "11.00€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/cheese burger.png"
       },
       {
         name: "Avocado Cheese",
         description: "Bun Martin’s, steak irlandais, fromage américain, avocat, pickles, salade, tomate, sauce smash.",
-        price: "14.50€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/avocado cheese.png"
       },
       {
         name: "Big Smash",
         description: "Bun Martin’s, cheddar, Double steak irlandais, oignons, pickles, salade iceberg, sauce biggy.",
-        price: "15.90€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/big smash.png"
       },
       {
         name: "Fungi Smash",
         description: "Bun Martin’s, steak irlandais, fromage américain, champignons frais grillés, pickles, sauce fumée.",
-        price: "13.50€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/fungi smash.png"
       },
       {
         name: "Chili Smash",
         description: "Bun Martin’s, steak irlandais, bacon croustillant, jalapeños, fromage américain, oignons, salade, tomates, pickles, sauce épicée.",
-        price: "14.00€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/chili smash.png"
       },
       {
         name: "Chicken Smash",
         description: "Bun Martin’s, poulet croustillant, fromage américain, oignons blancs, salade, tomate, pickles, sauce smash.",
-        price: "12.90€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/chicken smash.png"
       },
       {
         name: "Avocado Chicken",
         description: "Bun Martin’s, poulet croustillant, fromage américain, avocat, oignons blancs, salade, tomate, pickles, sauce smash.",
-        price: "14.90€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/avocado chicken.png"
       },
       {
         name: "Hot Chicken Smash",
         description: "Bun Martin’s, poulet croustillant, fromage américain, jalapeños, oignons blancs, salade, tomate, pickles, sauce épicée.",
-        price: "13.50€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/hot chicken.png"
       },
       {
         name: "BBQ Chicken",
         description: "Bun Martin’s, poulet croustillant, bacon croustillant, oignons frits, cheddar, sauce BBQ.",
-        price: "13.90€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/bbq chicken.png"
       },
       {
         name: "Le Truffe",
         description: "Bun Martin’s, steak irlandais, fromage américain, oignons caramélisés, sauce à la truffe noire.",
-        price: "15.50€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/truffe.png"
       },
       {
         name: "Veggie Smash",
         description: "Bun Martin’s, steak végétarien, fromage américain, oignons, salade, tomate, pickles, sauce smash.",
-        price: "12.50€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/veggie.png"
       },
       {
         name: "Fish Smash",
         description: "Bun Martin’s, poisson pané croustillant, fromage américain, sauce tartare maison.",
-        price: "12.90€",
         image: "/Dossier PNG SMASH SMASH/Burgers PNG/fish.png"
       }
     ]
@@ -103,25 +89,21 @@ const categories = [
       {
         name: "Classic Dog",
         description: "Saucisse de bœuf, ketchup, moutarde, oignons frits.",
-        price: "7.50€",
         image: "/Dossier PNG SMASH SMASH/Hot Dog PNG/hotdog classic.png"
       },
       {
         name: "New York Dog",
         description: "Saucisse de bœuf, choucroute, moutarde douce, oignons caramélisés.",
-        price: "8.50€",
         image: "/Dossier PNG SMASH SMASH/Hot Dog PNG/hotdog new york style.png"
       },
       {
         name: "Spicy Dog",
         description: "Saucisse de bœuf, jalapeños, sauce piquante, oignons rouges.",
-        price: "8.90€",
         image: "/Dossier PNG SMASH SMASH/Hot Dog PNG/hotdog spicy.png"
       },
       {
         name: "Bacon Cheese Dog",
         description: "Saucisse de bœuf, bacon croustillant, sauce cheddar fondu.",
-        price: "9.50€",
         image: "/Dossier PNG SMASH SMASH/Hot Dog PNG/hotdog bacon cheese.png"
       }
     ]
@@ -133,61 +115,51 @@ const categories = [
       {
         name: "Frites Maison",
         description: "Fraîchement coupées chaque matin, double cuisson.",
-        price: "4.50€",
         image: "/Dossier PNG SMASH SMASH/Frites PNG/frites.png"
       },
       {
         name: "Frites Patate Douce",
         description: "Croustillantes et légèrement sucrées.",
-        price: "5.90€",
         image: "/Dossier PNG SMASH SMASH/Frites PNG/frites patate douce.png"
       },
       {
         name: "Cheesy Fries",
         description: "Nos frites maison nappées de cheddar fondu.",
-        price: "6.50€",
         image: "/Dossier PNG SMASH SMASH/Frites PNG/frites cheddar.png"
       },
       {
         name: "Bacon Cheese Fries",
         description: "Frites, cheddar fondu et éclats de bacon croustillant.",
-        price: "7.50€",
         image: "/Dossier PNG SMASH SMASH/Frites PNG/frites cheddar bacon.png"
       },
       {
         name: "Jalapeños Cheese Fries",
         description: "Frites, cheddar fondu et piments jalapeños.",
-        price: "7.00€",
         image: "/Dossier PNG SMASH SMASH/Frites PNG/frites cheddar jalapenos.png"
       },
       {
         name: "Crispy Onion Fries",
         description: "Frites, cheddar fondu et oignons frits croustillants.",
-        price: "7.00€",
         image: "/Dossier PNG SMASH SMASH/Frites PNG/frites cheddar ognion crispy.png"
       },
       {
         name: "Chicken Tenders (x4)",
         description: "Filets de poulet ultra croustillants.",
-        price: "7.90€",
         image: "/Dossier PNG SMASH SMASH/Petite Faim/tenders.png"
       },
       {
         name: "Chicken Wings (x6)",
         description: "Ailerons de poulet marinés et grillés.",
-        price: "7.50€",
         image: "/Dossier PNG SMASH SMASH/Petite Faim/wings.png"
       },
       {
         name: "Mozza Sticks (x5)",
         description: "Bâtonnets de mozzarella fondante.",
-        price: "6.90€",
         image: "/Dossier PNG SMASH SMASH/Petite Faim/mozza sticks.png"
       },
       {
         name: "Onion Rings (x8)",
         description: "Rondelles d'oignons panées.",
-        price: "5.50€",
         image: "/Dossier PNG SMASH SMASH/Petite Faim/onion rings.png"
       }
     ]
@@ -199,31 +171,26 @@ const categories = [
       {
         name: "Tiramisu Maison",
         description: "Oreo, Speculoos, Bueno ou Daim.",
-        price: "5.50€",
         image: "/Dossier PNG SMASH SMASH/Desserts PNG/tiramisu oreo.png"
       },
       {
         name: "Cheesecake",
         description: "Framboise, Mangue, Citron ou Fruits Rouges.",
-        price: "6.50€",
         image: "/Dossier PNG SMASH SMASH/Desserts PNG/cheesecake framboise.png"
       },
       {
         name: "Crêpe Nutella",
         description: "La classique, généreuse en chocolat.",
-        price: "5.00€",
         image: "/Dossier PNG SMASH SMASH/Desserts PNG/crepe nutella.png"
       },
       {
         name: "Gaufre Sucre",
         description: "Gaufre de Bruxelles saupoudrée de sucre glace.",
-        price: "4.50€",
         image: "/Dossier PNG SMASH SMASH/Desserts PNG/gaufre perle de sucre.png"
       },
       {
         name: "Smash Nutella",
         description: "Notre dessert signature au Nutella.",
-        price: "6.00€",
         image: "/Dossier PNG SMASH SMASH/Desserts PNG/smash nutella.png"
       }
     ]
@@ -235,25 +202,21 @@ const categories = [
       {
         name: "Crousty Sucré",
         description: "Bouchées croustillantes et sucrées.",
-        price: "5.50€",
         image: "/Dossier PNG SMASH SMASH/Crousty PNG/crousty sucré.png"
       },
       {
         name: "Crousty Hot",
         description: "Bouchées croustillantes et épicées.",
-        price: "5.50€",
         image: "/Dossier PNG SMASH SMASH/Crousty PNG/crousty hot.png"
       },
       {
         name: "Crousty BBQ",
         description: "Bouchées croustillantes sauce BBQ.",
-        price: "5.50€",
         image: "/Dossier PNG SMASH SMASH/Crousty PNG/crousty bbq.png"
       },
       {
         name: "Crousty Mixte",
         description: "Assortiment de nos meilleurs crousties.",
-        price: "9.90€",
         image: "/Dossier PNG SMASH SMASH/Crousty PNG/crousty mixte.png"
       }
     ]
@@ -265,7 +228,6 @@ const categories = [
       {
         name: "Salade Smash",
         description: "Mélange de fraîcheur avec nos ingrédients signature.",
-        price: "10.50€",
         image: "/Dossier PNG SMASH SMASH/Salade PNG/Salade.png"
       }
     ]
@@ -277,25 +239,21 @@ const categories = [
       {
         name: "Milkshakes Premium",
         description: "Speculoos, Oreo, Bueno, M&M's ou Snickers.",
-        price: "6.50€",
         image: "/Dossier PNG SMASH SMASH/Boissons PNG/Milkshake Oreo.png"
       },
       {
         name: "Mojitos Maison",
         description: "Menthe, Fraise, Passion, Pêche ou Pomme.",
-        price: "5.50€",
         image: "/Dossier PNG SMASH SMASH/Boissons PNG/Mojito menthe.png"
       },
       {
         name: "Dada (33cl)",
         description: "Plusieurs saveurs disponibles.",
-        price: "3.50€",
         image: "/Dossier PNG SMASH SMASH/Boissons PNG/dada fraise.png"
       },
       {
         name: "Oasis (33cl)",
         description: "Tropical, Pomme Poire ou Fraise Framboise.",
-        price: "2.80€",
         image: "/Dossier PNG SMASH SMASH/Boissons PNG/oasis tropical.png"
       }
     ]
@@ -314,7 +272,7 @@ export default function MenuPage() {
             
             <div className="flex flex-wrap justify-center gap-4 mb-8 sm:mb-12">
               <div className="bg-[#469956] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-full font-black italic text-xs sm:text-base shadow-lg neon-glow">
-                MENU SMASH : BURGER + FRITES + BOISSON = +5.00€
+                MENU SMASH : BURGER + FRITES + BOISSON
               </div>
             </div>
 
@@ -348,9 +306,6 @@ export default function MenuPage() {
                         alt={item.name} 
                         className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" 
                       />
-                      <div className="absolute top-3 right-3 sm:top-4 sm:right-4 bg-[#469956] px-3 py-1 sm:px-4 sm:py-1 rounded-full shadow-lg">
-                        <span className="text-sm sm:text-lg font-black italic text-white">{item.price}</span>
-                      </div>
                     </div>
                     <div className="p-6 sm:p-8">
                       <h3 className="text-xl sm:text-2xl font-black italic tracking-tight mb-2 sm:mb-4 group-hover:text-[#469956] transition-colors uppercase">
