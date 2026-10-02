@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Smash & Smash | Le Meilleur Smash Burger de Bruxelles",
-  description: "Découvrez l'expérience Smash & Smash à Bruxelles. Burgers smashés à la perfection, viande belge fraîche et ambiance minimaliste. Commande en ligne et Click & Collect.",
+  description: "Découvrez l'expérience Smash & Smash à Bruxelles. Burgers smashés à la perfection, viande belge fraîche et ambiance minimaliste. Commandez en ligne, livraison à domicile.",
   openGraph: {
     title: "Smash & Smash | Le Meilleur Smash Burger de Bruxelles",
     description: "La réaction de Maillard à son apogée. Des produits frais, un décor brut, le goût pur.",
