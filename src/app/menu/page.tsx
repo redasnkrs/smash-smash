@@ -5,7 +5,20 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
 
-const categories = [
+type MenuItem = {
+  name: string;
+  description: string;
+  image: string;
+};
+
+type MenuCategory = {
+  id: string;
+  name: string;
+  cols?: string;
+  items: MenuItem[];
+};
+
+const categories: MenuCategory[] = [
   {
     id: "burgers",
     name: "Nos Burgers",
@@ -85,6 +98,7 @@ const categories = [
   {
     id: "hotdogs",
     name: "Hot Dogs",
+    cols: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
     items: [
       {
         name: "Classic Dog",
@@ -198,6 +212,7 @@ const categories = [
   {
     id: "crousty",
     name: "Crousty",
+    cols: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
     items: [
       {
         name: "Crousty Sucré",
@@ -224,6 +239,7 @@ const categories = [
   {
     id: "salades",
     name: "Salades",
+    cols: "grid-cols-1 max-w-2xl mx-auto",
     items: [
       {
         name: "Salade Smash",
@@ -235,6 +251,7 @@ const categories = [
   {
     id: "drinks",
     name: "Boissons",
+    cols: "grid-cols-1 sm:grid-cols-2 lg:grid-cols-4",
     items: [
       {
         name: "Milkshakes Premium",
@@ -290,7 +307,7 @@ export default function MenuPage() {
                 <div className="flex-1 h-px bg-white/10"></div>
               </div>
               
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-10">
+              <div className={`grid gap-6 sm:gap-10 ${category.cols ?? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"}`}>
                 {category.items.map((item, index) => (
                   <motion.div 
                     key={index}
