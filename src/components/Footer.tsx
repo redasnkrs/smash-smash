@@ -2,7 +2,13 @@ import React from 'react';
 import { Instagram, Facebook, MapPin, Phone } from 'lucide-react';
 import Link from 'next/link';
 
+// TEMPORAIRE : footer masqué le temps de vérifier si le client l'avait demandé.
+// Passer à `true` pour le réafficher partout.
+const FOOTER_VISIBLE = false;
+
 export default function Footer() {
+  if (!FOOTER_VISIBLE) return null;
+
   return (
     <footer className="bg-black text-white pt-16 sm:pt-20 pb-10 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
