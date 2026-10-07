@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://redasnkrs.github.io/smash-smash"),
   title: "Smash & Smash | Le Meilleur Smash Burger de Bruxelles",
   description: "Découvrez l'expérience Smash & Smash à Bruxelles. Burgers smashés à la perfection, viande belge fraîche et ambiance minimaliste. Commandez en ligne, livraison à domicile.",
   openGraph: {
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
     siteName: "Smash & Smash",
     images: [
       {
-        url: "/Dossier PNG SMASH SMASH/Menus PNG/Menu big smash.png",
+        url: "https://redasnkrs.github.io/smash-smash/Dossier%20PNG%20SMASH%20SMASH/Menus%20PNG/Menu%20big%20smash.png",
         width: 1200,
         height: 630,
         alt: "Smash & Smash Bruxelles",
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Smash & Smash | Bruxelles",
     description: "Burgers smashés à la perfection, viande belge fraîche.",
-    images: ["/Dossier PNG SMASH SMASH/Menus PNG/Menu big smash.png"],
+    images: ["https://redasnkrs.github.io/smash-smash/Dossier%20PNG%20SMASH%20SMASH/Menus%20PNG/Menu%20big%20smash.png"],
   },
 };
 

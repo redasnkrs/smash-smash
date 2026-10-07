@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import { asset } from '@/lib/asset';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
@@ -32,7 +33,7 @@ export default function RestaurantsPage() {
             <div className="w-full lg:w-[60%] relative">
               <div className="relative w-full aspect-square sm:aspect-video lg:aspect-auto lg:h-full rounded-[2rem] sm:rounded-[3.5rem] overflow-hidden glass-card border border-white/10 p-6 sm:p-12 flex items-center justify-center">
                 <img 
-                  src="/Dossier PNG SMASH SMASH/Menus PNG/Menu hot chicken.png" 
+                  src={asset("/Dossier PNG SMASH SMASH/Menus PNG/Menu hot chicken.png")} 
                   className="w-full h-full object-contain drop-shadow-[0_20px_50px_rgba(70,153,86,0.3)] scale-110" 
                   alt="Atmosphere Product" 
                 />

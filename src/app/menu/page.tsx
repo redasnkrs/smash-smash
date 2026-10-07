@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Navbar from '@/components/Navbar';
+import { asset } from '@/lib/asset';
 import Footer from '@/components/Footer';
 import { motion } from 'framer-motion';
 
@@ -319,7 +320,7 @@ export default function MenuPage() {
                   >
                     <div className="h-48 sm:h-64 overflow-hidden relative p-4 sm:p-6 flex items-center justify-center bg-black/40">
                       <img 
-                        src={item.image} 
+                        src={asset(item.image)} 
                         alt={item.name} 
                         className="max-w-full max-h-full object-contain group-hover:scale-110 transition-transform duration-700 drop-shadow-[0_10px_20px_rgba(0,0,0,0.5)]" 
                       />

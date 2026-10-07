@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import { asset } from '@/lib/asset';
 import { motion } from "framer-motion";
 import { MapPin, ArrowRight } from "lucide-react";
 import Navbar from "@/components/Navbar";
@@ -50,7 +51,7 @@ export default function Home() {
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-r from-[#0a0a0a] via-[#0a0a0a]/80 to-transparent z-10" />
           <Image
-            src="/Dossier PNG SMASH SMASH/Menus PNG/Menu big smash.png"
+            src={asset("/Dossier PNG SMASH SMASH/Menus PNG/Menu big smash.png")}
             fill
             className="object-contain scale-110 opacity-40 translate-x-1/4 sm:translate-x-1/3"
             alt="Hero Background"
@@ -116,7 +117,7 @@ export default function Home() {
             <div className="w-full md:w-1/2 relative">
               <div className="aspect-square rounded-[2rem] sm:rounded-[3rem] overflow-hidden border border-white/10 relative z-10 shadow-2xl bg-black/40 p-4 sm:p-8 flex items-center justify-center">
                 <Image
-                  src="/Dossier PNG SMASH SMASH/Menus PNG/Menu smash burger.png"
+                  src={asset("/Dossier PNG SMASH SMASH/Menus PNG/Menu smash burger.png")}
                   width={600}
                   height={600}
                   className="w-full h-full object-contain"
@@ -169,7 +170,7 @@ export default function Home() {
               >
                 <div className="h-40 sm:h-48 w-full mb-6 flex items-center justify-center relative">
                   <Image
-                    src={item.image}
+                    src={asset(item.image)}
                     alt={item.name}
                     width={200}
                     height={200}
@@ -242,7 +243,7 @@ export default function Home() {
             </div>
             <div className="w-full md:w-1/2 aspect-video md:aspect-square bg-black/40 rounded-[2rem] sm:rounded-[3rem] overflow-hidden border border-white/10 z-10 flex items-center justify-center p-4 sm:p-8 relative">
                <Image
-                src="/Dossier PNG SMASH SMASH/Menus PNG/Menu truffe.png"
+                src={asset("/Dossier PNG SMASH SMASH/Menus PNG/Menu truffe.png")}
                 width={500}
                 height={500}
                 className="w-full h-full object-contain drop-shadow-2xl"

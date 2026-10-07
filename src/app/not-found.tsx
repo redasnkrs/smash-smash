@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import { asset } from '@/lib/asset';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { ArrowLeft, Home } from 'lucide-react';
@@ -30,7 +31,7 @@ export default function NotFound() {
             
             <div className="relative w-48 h-48 mx-auto mb-12 flex items-center justify-center">
                 <img 
-                    src="/Dossier PNG SMASH SMASH/Burgers PNG/smash burger.png" 
+                    src={asset("/Dossier PNG SMASH SMASH/Burgers PNG/smash burger.png")} 
                     className="w-full h-full object-contain grayscale opacity-20 rotate-12 scale-110" 
                     alt="Burger manquant" 
                 />
